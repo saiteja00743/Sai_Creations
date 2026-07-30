@@ -40,20 +40,37 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-7 flex flex-col text-left"
           >
-            {/* Top Sunlight Badge */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.1, duration: 0.5 }}
-              className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full sunlight-badge-gradient text-[#E65100] text-xs sm:text-sm font-semibold mb-6 w-fit shadow-sm"
-            >
-              <span className="flex h-2 w-2 relative">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FF9800] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FF9800]"></span>
-              </span>
-              <Sparkles className="w-4 h-4 text-[#FF9800]" />
-              <span>Sunlight Theme • Premium Digital & AI Studio</span>
-            </motion.div>
+            {/* Top Sunlight Badge & Founder Avatar */}
+            <div className="flex items-center gap-3 flex-wrap mb-6">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.1, duration: 0.5 }}
+                className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full sunlight-badge-gradient text-[#E65100] text-xs sm:text-sm font-semibold shadow-sm"
+              >
+                <span className="flex h-2 w-2 relative">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FF9800] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FF9800]"></span>
+                </span>
+                <Sparkles className="w-4 h-4 text-[#FF9800]" />
+                <span>Sunlight Theme • Premium Digital & AI Studio</span>
+              </motion.div>
+
+              <motion.a
+                href="#about"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.15, duration: 0.5 }}
+                className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/90 border border-[#FFC107]/40 shadow-xs hover:border-[#FF9800] transition-colors"
+              >
+                <img
+                  src="/mypic.jpeg"
+                  alt="Sai Teja Gajavelli"
+                  className="w-6 h-6 rounded-full object-cover object-top border border-[#FF9800]"
+                />
+                <span className="text-xs font-bold text-[#1E1E1E]">Sai Teja Gajavelli</span>
+              </motion.a>
+            </div>
 
             {/* Main Heading */}
             <motion.h1

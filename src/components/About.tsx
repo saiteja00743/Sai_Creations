@@ -24,29 +24,41 @@ export default function About() {
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-[#FF9800]/30 via-[#FFC107]/20 to-[#FFE082]/40 blur-2xl transform -rotate-3 scale-105" />
 
             {/* Main Featured Image Card */}
-            <div className="relative rounded-3xl overflow-hidden glass-card border border-[#FFC107]/30 shadow-2xl bg-white p-3">
+            <div className="relative rounded-3xl overflow-hidden glass-card border border-[#FFC107]/40 shadow-2xl bg-white p-3 group">
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
-                alt="Sai Creations Creative Agency Team"
-                className="w-full h-80 sm:h-[420px] object-cover rounded-2xl"
+                src="/mypic.jpeg"
+                alt="Sai Teja Gajavelli - Founder & Chief Architect at Sai Creations"
+                className="w-full h-80 sm:h-[460px] object-cover object-top rounded-2xl group-hover:scale-105 transition-transform duration-700"
               />
 
               {/* Sunlight Rays Highlight Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent rounded-2xl pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent rounded-2xl pointer-events-none" />
+
+              {/* Founder Title Badge Overlay */}
+              <div className="absolute top-6 left-6 glass-card px-4 py-2 rounded-xl bg-white/90 border border-[#FFC107]/40 shadow-lg flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#FF9800] animate-pulse" />
+                <span className="text-xs font-bold text-[#1E1E1E]">Founder & Lead Architect</span>
+              </div>
 
               {/* Floating Stat Badge Overlay */}
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute bottom-6 right-6 glass-card p-4 sm:p-5 rounded-2xl bg-white/90 border border-[#FFC107]/40 shadow-xl max-w-xs"
+                className="absolute bottom-6 right-6 left-6 glass-card p-4 sm:p-5 rounded-2xl bg-white/95 border border-[#FFC107]/40 shadow-xl"
               >
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-[#FF9800] to-[#FFC107] flex items-center justify-center text-white font-bold shadow-md shrink-0">
-                    <Sun className="w-6 h-6 animate-spin-slow" />
+                <div className="flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-[#FF9800] to-[#FFC107] flex items-center justify-center text-white font-bold shadow-md shrink-0">
+                      <Sun className="w-6 h-6 animate-spin-slow" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-bold text-[#1E1E1E]">Sai Teja Gajavelli</div>
+                      <div className="text-xs text-[#666666]">Founder & Chief Architect, Sai Creations</div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-sm font-bold text-[#1E1E1E]">Sunlight Philosophy</div>
-                    <div className="text-xs text-[#666666]">Warmth, Clarity, Speed & Precision</div>
+                  <div className="hidden sm:block text-right">
+                    <div className="text-xs font-bold text-[#E65100]">Warangal, Telangana</div>
+                    <div className="text-[10px] text-[#666666]">Sunlight Studio HQ</div>
                   </div>
                 </div>
               </motion.div>
@@ -71,11 +83,11 @@ export default function About() {
             </h2>
 
             <p className="text-base sm:text-lg text-[#666666] font-body leading-relaxed mb-6">
-              Founded on the principle that digital experiences should radiate clarity and warmth, <strong>Sai Creations</strong> is an elite creative digital agency specializing in high-performance websites, autonomous AI applications, mobile software, and timeless branding.
+              Founded by <strong>Sai Teja Gajavelli</strong> on the principle that digital products should radiate clarity and warmth, <strong>Sai Creations</strong> is a modern studio crafting high-performance websites, autonomous AI applications, mobile apps, and timeless digital identities.
             </p>
 
             <p className="text-sm sm:text-base text-[#666666] font-body leading-relaxed mb-8">
-              We merge Stripe-level engineering rigor with Framer-level design magic. Our multidisciplinary team of designers, AI researchers, and full-stack engineers partner with ambitious founders to build products that captivate users and generate measurable commercial growth.
+              Under Sai Teja's engineering vision, we merge Stripe-level architectural rigor with Framer-level aesthetic magic — building software that captivates users and accelerates commercial growth for ambitious brands across India and globally.
             </p>
 
             {/* Core Values Checklist */}
