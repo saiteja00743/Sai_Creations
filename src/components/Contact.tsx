@@ -21,7 +21,7 @@ export default function Contact() {
     name: "",
     email: "",
     company: "",
-    budget: "$5,000 - $10,000",
+    budget: "₹50,000 – ₹1,00,000",
     projectType: "Website Design",
     message: "",
   });
@@ -89,8 +89,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-xs text-[#666666] font-medium">Email Us Directly</div>
-                  <a href="mailto:hello@saicreations.design" className="text-sm font-bold text-[#1E1E1E] hover:text-[#FF9800]">
-                    hello@saicreations.design
+                  <a href="mailto:gajavellisaiteja007@gmail.com" className="text-sm font-bold text-[#1E1E1E] hover:text-[#FF9800]">
+                    gajavellisaiteja007@gmail.com
                   </a>
                 </div>
               </div>
@@ -100,9 +100,9 @@ export default function Contact() {
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs text-[#666666] font-medium">Call Our Studio</div>
-                  <a href="tel:+18005550199" className="text-sm font-bold text-[#1E1E1E] hover:text-[#FF9800]">
-                    +1 (800) 555-0199
+                  <div className="text-xs text-[#666666] font-medium">Call / WhatsApp</div>
+                  <a href="tel:+918465996338" className="text-sm font-bold text-[#1E1E1E] hover:text-[#FF9800]">
+                    +91 84659 96338
                   </a>
                 </div>
               </div>
@@ -113,7 +113,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-xs text-[#666666] font-medium">Headquarters</div>
-                  <div className="text-sm font-bold text-[#1E1E1E]">San Francisco, CA & Remote Global</div>
+                  <div className="text-sm font-bold text-[#1E1E1E]">Kommala, Warangal, Telangana 🇮🇳</div>
                 </div>
               </div>
             </div>
@@ -162,7 +162,7 @@ export default function Contact() {
                       <input
                         required
                         type="text"
-                        placeholder="Alex Morgan"
+                        placeholder="e.g. Ravi Sharma"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         className="w-full px-4 py-3.5 rounded-2xl bg-[#FFF8E8]/60 border border-[#FFC107]/30 text-sm text-[#1E1E1E] focus:outline-none focus:border-[#FF9800] focus:bg-white"
@@ -177,7 +177,7 @@ export default function Contact() {
                       <input
                         required
                         type="email"
-                        placeholder="alex@company.com"
+                        placeholder="e.g. hello@yourbrand.in"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         className="w-full px-4 py-3.5 rounded-2xl bg-[#FFF8E8]/60 border border-[#FFC107]/30 text-sm text-[#1E1E1E] focus:outline-none focus:border-[#FF9800] focus:bg-white"
@@ -193,7 +193,7 @@ export default function Contact() {
                       </label>
                       <input
                         type="text"
-                        placeholder="Acme Inc."
+                        placeholder="e.g. Innovate Tech Solutions"
                         value={formData.company}
                         onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                         className="w-full px-4 py-3.5 rounded-2xl bg-[#FFF8E8]/60 border border-[#FFC107]/30 text-sm text-[#1E1E1E] focus:outline-none focus:border-[#FF9800] focus:bg-white"
@@ -210,10 +210,11 @@ export default function Contact() {
                         onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                         className="w-full px-4 py-3.5 rounded-2xl bg-[#FFF8E8]/60 border border-[#FFC107]/30 text-sm text-[#1E1E1E] focus:outline-none focus:border-[#FF9800] focus:bg-white cursor-pointer"
                       >
-                        <option value="<$5,000">Under $5,000</option>
-                        <option value="$5,000 - $10,000">$5,000 - $10,000</option>
-                        <option value="$10,000 - $25,000">$10,000 - $25,000</option>
-                        <option value="$25,000+">$25,000+</option>
+                        <option value="Under ₹25,000">Under ₹25,000</option>
+                        <option value="₹25,000 – ₹50,000">₹25,000 – ₹50,000</option>
+                        <option value="₹50,000 – ₹1,00,000">₹50,000 – ₹1,00,000</option>
+                        <option value="₹1,00,000 – ₹5,00,000">₹1,00,000 – ₹5,00,000</option>
+                        <option value="₹5,00,000+">₹5,00,000+ (Enterprise)</option>
                       </select>
                     </div>
                   </div>
@@ -256,7 +257,7 @@ export default function Contact() {
                     <textarea
                       required
                       rows={4}
-                      placeholder="Tell us about your goals, target launch timeline, and key requirements..."
+                      placeholder="Describe your project goals, expected timeline, key features, and any specific requirements or references..."
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       className="w-full px-4 py-3.5 rounded-2xl bg-[#FFF8E8]/60 border border-[#FFC107]/30 text-sm text-[#1E1E1E] focus:outline-none focus:border-[#FF9800] focus:bg-white resize-none"

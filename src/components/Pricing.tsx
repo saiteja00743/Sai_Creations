@@ -13,8 +13,8 @@ export default function Pricing() {
     {
       name: "Starter",
       badge: "Essential MVP",
-      priceProject: "$2,999",
-      priceRetainer: "$1,800/mo",
+      priceProject: "₹2,49,999",
+      priceRetainer: "₹1,49,999/mo",
       description: "Ideal for early-stage startups needing a sleek, fast, sunlight-inspired web presence.",
       popular: false,
       features: [
@@ -30,8 +30,8 @@ export default function Pricing() {
     {
       name: "Professional",
       badge: "Most Popular",
-      priceProject: "$5,999",
-      priceRetainer: "$3,800/mo",
+      priceProject: "₹4,99,999",
+      priceRetainer: "₹3,19,999/mo",
       description: "Complete digital product package with custom AI integration and advanced animations.",
       popular: true,
       features: [
@@ -48,8 +48,8 @@ export default function Pricing() {
     {
       name: "Enterprise",
       badge: "Full Scale Studio",
-      priceProject: "$11,999+",
-      priceRetainer: "$7,500/mo",
+      priceProject: "₹9,99,999+",
+      priceRetainer: "₹6,29,999/mo",
       description: "Bespoke engineering for high-growth platforms, mobile apps, and custom RAG AI agents.",
       popular: false,
       features: [

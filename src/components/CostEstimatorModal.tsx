@@ -18,15 +18,15 @@ export default function CostEstimatorModal({ isOpen, onClose }: CostEstimatorPro
 
   if (!isOpen) return null;
 
-  // Calculate dynamic price
-  let basePrice = 2999;
-  if (projectType === "app") basePrice = 5999;
-  if (projectType === "ai") basePrice = 7999;
-  if (projectType === "full") basePrice = 11999;
+  // Calculate dynamic price in INR
+  let basePrice = 249999;
+  if (projectType === "app") basePrice = 499999;
+  if (projectType === "ai") basePrice = 649999;
+  if (projectType === "full") basePrice = 999999;
 
-  const extraPagesCost = (pagesCount - 1) * 350;
-  const aiCost = needsAI ? 1500 : 0;
-  const brandingCost = needsBranding ? 1200 : 0;
+  const extraPagesCost = (pagesCount - 1) * 29000;
+  const aiCost = needsAI ? 125000 : 0;
+  const brandingCost = needsBranding ? 100000 : 0;
   const multiplier = timeline === "rush" ? 1.3 : 1.0;
 
   const estimatedPrice = Math.round((basePrice + extraPagesCost + aiCost + brandingCost) * multiplier);
@@ -182,8 +182,8 @@ export default function CostEstimatorModal({ isOpen, onClose }: CostEstimatorPro
                   Estimated Investment
                 </span>
                 <div className="font-heading font-extrabold text-3xl text-[#1E1E1E]">
-                  ${estimatedPrice.toLocaleString()}{" "}
-                  <span className="text-xs font-normal text-[#666666]">USD</span>
+                  ₹{estimatedPrice.toLocaleString("en-IN")}{" "}
+                  <span className="text-xs font-normal text-[#666666]">INR</span>
                 </div>
               </div>
 
