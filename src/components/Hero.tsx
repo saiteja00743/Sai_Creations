@@ -66,7 +66,7 @@ export default function Hero() {
                 <img
                   src="/mypic.jpeg"
                   alt="Sai Teja Gajavelli"
-                  className="w-6 h-6 rounded-full object-cover object-top border border-[#FF9800]"
+                  className="w-6 h-6 rounded-full object-cover object-[center_65%] border border-[#FF9800]"
                 />
                 <span className="text-xs font-bold text-[#1E1E1E]">Sai Teja Gajavelli</span>
               </motion.a>

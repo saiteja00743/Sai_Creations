@@ -25,43 +25,39 @@ export default function About() {
 
             {/* Main Featured Image Card */}
             <div className="relative rounded-3xl overflow-hidden glass-card border border-[#FFC107]/40 shadow-2xl bg-white p-3 group">
-              <img
-                src="/mypic.jpeg"
-                alt="Sai Teja Gajavelli - Founder & Chief Architect at Sai Creations"
-                className="w-full h-80 sm:h-[460px] object-cover object-top rounded-2xl group-hover:scale-105 transition-transform duration-700"
-              />
+              <div className="relative w-full h-[450px] sm:h-[520px] rounded-2xl overflow-hidden bg-[#E8DCC4]">
+                <img
+                  src="/mypic.jpeg"
+                  alt="Sai Teja Gajavelli - Founder & Chief Architect at Sai Creations"
+                  className="w-full h-full object-cover object-[center_65%] group-hover:scale-105 transition-transform duration-700"
+                />
 
-              {/* Sunlight Rays Highlight Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent rounded-2xl pointer-events-none" />
+                {/* Subtle vignette bottom gradient for readability */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20 rounded-2xl pointer-events-none" />
 
-              {/* Founder Title Badge Overlay */}
-              <div className="absolute top-6 left-6 glass-card px-4 py-2 rounded-xl bg-white/90 border border-[#FFC107]/40 shadow-lg flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#FF9800] animate-pulse" />
-                <span className="text-xs font-bold text-[#1E1E1E]">Founder & Lead Architect</span>
-              </div>
+                {/* Top-Left Founder Badge */}
+                <div className="absolute top-4 left-4 glass-card px-3.5 py-1.5 rounded-xl bg-white/90 border border-[#FFC107]/40 shadow-md flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-[#FF9800] animate-pulse" />
+                  <span className="text-xs font-bold text-[#1E1E1E]">Founder & Chief Architect</span>
+                </div>
 
-              {/* Floating Stat Badge Overlay */}
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute bottom-6 right-6 left-6 glass-card p-4 sm:p-5 rounded-2xl bg-white/95 border border-[#FFC107]/40 shadow-xl"
-              >
-                <div className="flex items-center justify-between gap-3">
+                {/* Bottom Overlay Label */}
+                <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/90 backdrop-blur-md border border-[#FFC107]/40 shadow-lg flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-[#FF9800] to-[#FFC107] flex items-center justify-center text-white font-bold shadow-md shrink-0">
-                      <Sun className="w-6 h-6 animate-spin-slow" />
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-tr from-[#FF9800] to-[#FFC107] flex items-center justify-center text-white font-bold shadow-sm shrink-0">
+                      <Sun className="w-5 h-5" />
                     </div>
                     <div>
                       <div className="text-sm font-bold text-[#1E1E1E]">Sai Teja Gajavelli</div>
-                      <div className="text-xs text-[#666666]">Founder & Chief Architect, Sai Creations</div>
+                      <div className="text-xs text-[#666666]">Founder & Chief Architect</div>
                     </div>
                   </div>
-                  <div className="hidden sm:block text-right">
-                    <div className="text-xs font-bold text-[#E65100]">Warangal, Telangana</div>
-                    <div className="text-[10px] text-[#666666]">Sunlight Studio HQ</div>
+                  <div className="text-right">
+                    <div className="text-xs font-bold text-[#E65100]">Warangal 🇮🇳</div>
+                    <div className="text-[10px] text-[#666666]">Sunlight Studio</div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </motion.div>
 
